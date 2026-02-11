@@ -1,0 +1,57 @@
+﻿   Γû▓ Next.js 15.1.4
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+npx : Failed to 
+compile.
+At line:1 char:1
++ npx next build 
+2>&1 | Out-File 
+-FilePath 
+build_log.txt 
+-Encoding utf8 ...
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Failed    
+ to compile.:Stri    
+ng) [], RemoteEx    
+ception
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+
+./app/(admin)/admin/a
+ssignments/page.tsx:7
+5:9
+Type error: Cannot 
+find name 'setSelecte
+dComplaintId'.
+
+[0m [90m 73 |[39m 
+        ))[0m
+[0m [90m 74 
+|[39m[0m
+[0m[31m[1m>[22m[
+39m[90m 75 |[39m   
+      setSelectedComp
+laintId([36mnull[39
+m)[0m
+[0m [90m    |[39m 
+        [31m[1m^[2
+2m[39m[0m
+[0m [90m 76 |[39m 
+    }[0m
+[0m [90m 77 
+|[39m[0m
+[0m [90m 78 |[39m 
+    [36mconst[39m 
+filteredComplaints 
+[33m=[39m complaint
+s[33m.[39mfilter(c 
+[33m=>[39m[0m
+Static worker exited 
+with code: 1 and 
+signal: null

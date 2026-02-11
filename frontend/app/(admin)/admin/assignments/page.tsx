@@ -56,6 +56,7 @@ export default function AssignmentsPage() {
     )
     const [technicians, setTechnicians] = useState<Technician[]>(TECHNICIANS)
     const [searchQuery, setSearchQuery] = useState("")
+    const [selectedComplaintId, setSelectedComplaintId] = useState<string | null>(null)
 
     const handleAssign = (complaintId: string, techId: string) => {
         // Update complaint status
