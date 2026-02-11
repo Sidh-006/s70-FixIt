@@ -39,9 +39,10 @@ const getNotification = (id: string) => {
     }
 }
 
-export default function NotificationDetailPage({ params }: { params: { id: string } }) {
+export default async function NotificationDetailPage({ params }: { params: Promise<{ id: string }> }) {
     // In a real app we'd await params and fetch data
-    const notification = getNotification(params.id)
+    const { id } = await params
+    const notification = getNotification(id)
 
     if (!notification) {
         notFound()

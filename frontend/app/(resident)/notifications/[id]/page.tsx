@@ -35,8 +35,9 @@ const getNotification = (id: string) => {
     }
 }
 
-export default function ResidentNotificationDetailPage({ params }: { params: { id: string } }) {
-    const notification = getNotification(params.id)
+export default async function ResidentNotificationDetailPage({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params
+    const notification = getNotification(id)
 
     if (!notification) {
         notFound()
